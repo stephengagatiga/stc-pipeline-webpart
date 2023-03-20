@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+@mixin button($bgColor, $fontColor) {
+    padding: 5px 20px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    border: 3px solid transparent;
+    background-color: $bgColor;
+    color: $fontColor;
+    display: block;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+ 
+    &:hover {
+        border: 3px solid black;;
+    }
+
+}
+
+.stcButtonPrimary {
+    @include button($primary-color, white);
+}
+
+.stcButtonSecondary {
+    @include button($subtle-color, white);
+}
+
+.stcButtonWithInput {
+    padding: 5px 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    background-color: silver;
+    color: white;
+    display: block;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+ 
+    &:hover {
+        background-color: rgb(216, 216, 216);
+    }
+}

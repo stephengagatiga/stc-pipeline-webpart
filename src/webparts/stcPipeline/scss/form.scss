@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+$input-padding-size: 5px;
+$input-font-size: 14px !important;
+
+form, .form {
+
+    .formGroup, .formGroupAlignTop {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        font-size: $input-font-size;
+
+
+        p {
+            margin: 0px;
+        }
+
+        label {
+            color: $subtle-color;
+            margin-right: 5px;
+        }
+        
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid $subtle-color;
+            padding: $input-padding-size;
+            flex-grow: 1;
+            font-size: $input-font-size;
+
+        }
+
+        textarea {
+            flex-grow: 1;
+            resize: vertical;
+            border-top: none;
+            border-left: none;
+            border-bottom: 1px solid $subtle-color;
+            border-right: 1px solid $subtle-color;
+            font-size: $input-font-size;
+
+        }
+    }
+
+    .formGroup {
+        align-items: center;
+    }
+
+    .formGroupAlignTop {
+        align-items: flex-start;
+    }
+
+    .required {
+        &::after {
+            content: '*';
+            color: red;
+        }
+    }
+}

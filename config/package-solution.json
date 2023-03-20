@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "stc-pipeline-webpart-client-side-solution",
+    "id": "6249df7c-dced-4a69-b06a-3af207fe534c",
+    "version": "1.1.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/stc-pipeline-webpart.sppkg"
+  }
+}

@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+$custom-dropdown-padding-size: 5px;
+.customDropdown {
+    color: $subtle-color;
+
+    .customDropdownSelected {
+        color: black;
+        cursor: pointer;
+        border-bottom: 1px solid $subtle-color;
+        padding: $custom-dropdown-padding-size;
+    }
+    
+    .customDropdownList {
+        position: absolute;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        .customDropdownListItem {
+            display: block;
+            cursor: pointer;
+            padding: $custom-dropdown-padding-size;
+
+            &:hover {
+                color: white;
+                background-color: $primary-color;
+            }
+        }
+
+        .customDropdownListItemSelected {
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+
+    .customDropdownListHide {
+        display: none;
+    }
+
+    .customDropdownListShow {
+        display: block;
+    }
+
+}
